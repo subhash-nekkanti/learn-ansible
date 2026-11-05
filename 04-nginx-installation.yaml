@@ -1,0 +1,9 @@
+- name: Install nginx and start
+  hosts: frontend   #so now its not local so it will expect username and password and ip, ip is already uploaded in inventory.ini 
+  become: yes
+  tasks:
+    - name: Install nginx
+      package:  #or ansible.builtin.package
+        name: nginx
+        state: present
+    
