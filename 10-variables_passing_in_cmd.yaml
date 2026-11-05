@@ -1,0 +1,7 @@
+- name: greeting
+  hosts: local
+  connection: local
+  tasks:
+  - name: greeting a person
+    debug:
+      msg: "Hello {{ person_name }}" #person_name is not defined anywhere if wee want to give variable in command line -e "variable_name=subhash"
