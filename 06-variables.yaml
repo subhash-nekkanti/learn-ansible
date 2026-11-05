@@ -13,6 +13,6 @@
   - name: printing the variables
     vars:
      marks: "45"
-     time: "12 hours"
+     time: "13 hours"
     debug:
       msg: "Eventhough I studied for {{ time }} a day, I scored only {{ marks }} marks in my first semester examination"
