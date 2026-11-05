@@ -1,0 +1,25 @@
+{
+    "FirstName" : "Subhash",
+    "LastName": "Nekkanti",
+    "DOB": "01-01-2001",
+    "Addresses": [ 
+    {
+        "type": "permanant",
+        "door No":"01/2-b",
+        "street":"AS Rao Nagar",
+        "city":"Hyderabad"
+    },
+    {
+        "type": "Temporary",
+        "door No":"01/2-b",
+        "street":"AS Rao Nagar",
+        "city":"Hyderabad"
+    } ],
+    "Skills":{    
+        "os":"Linux",
+        "IDE":"VsCode",
+        "CM Tools":"Ansible"
+    }
+
+
+}

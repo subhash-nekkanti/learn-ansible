@@ -1,0 +1,44 @@
+- First_Name: "Subhash Chowdary" #yaml starts with -
+  Last_Name: "Nekkanti"
+  Dob: "01-01-2001"
+  addresses:
+  - type: "permanant"     #this is one object stores in addresses with index 0  (- for list)
+    door_no: 01-2/B
+    street: A S rao nagar 
+    city: Hyderabad 
+    state: Telanagana
+    Pin: 500080
+
+  - type: "temporary"   # this is another object in addresses with index 1  (- for list)
+    door_no: "02-2/B"
+    street: "A S rao nagar"
+    city: "Hyderabad"
+    state: "Telanagana"
+    Pin: "500080"
+  skills:    #map 
+    os: Linux
+    Ide: VsCode
+    CM_Tool: Ansible
+#second student 
+- First_Name: "Rama Subhash" 
+  Last_Name: "Nekkanti"
+  Dob: "01-01-2001"
+  addresses:
+  - type: "permanant"     
+    door_no: 01-2/B
+    street: A S rao nagar 
+    city: Hyderabad 
+    state: Telanagana
+    Pin: 500080
+
+  - type: "temporary"   
+    door_no: "02-2/B"
+    street: "A S rao nagar"
+    city: "Hyderabad"
+    state: "Telanagana"
+    Pin: "500080"
+  skills:    #map 
+    os: Linux
+    Ide: VsCode
+    CM_Tool: Ansible
+

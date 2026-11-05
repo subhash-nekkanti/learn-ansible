@@ -1,0 +1,22 @@
+<Student>
+    <FirstName>Subhash</FirstName>
+    <LastName>Nekkanti</LastName>
+    <DOB>01-01-2001</DOB>
+    <Mobile_NO>2345678910</Mobile_NO>
+    <addresses>
+        <address type="Temporary">
+            <DoorNo>02-1/B</DoorNo>
+            <StreetName>A.S.RaoNagar</StreetName>
+            <city>Hyderabad</city>
+            <State>Telangana</State>
+            <PostalPin>500080</PostalPin>
+        </address>
+        <address type="Permanant">
+            <DoorNo>01-2/B</DoorNo>
+            <StreetName>A.S.RaoNagar</StreetName>
+            <city>Hyderabad</city>
+            <State>Telangana</State>
+            <PostalPin>500080</PostalPin>
+        </address>
+    </addresses>
+</Student>
