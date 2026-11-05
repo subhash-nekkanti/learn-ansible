@@ -1,0 +1,9 @@
+- name: variables from files
+  hosts: local
+  connection: local
+  vars_files:   #keyword in ansible to store variables in other files
+  - course.yaml
+  tasks:
+    - name: printing course information
+      ansible.builtin.debug:
+        msg: "HI I am learning {{ course }} from {{ trainer }} which if of {{ duration }} duration"

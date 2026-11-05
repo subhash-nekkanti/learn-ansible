@@ -10,7 +10,8 @@
       msg: "I studied for almost {{ time }} a day and I scored {{ marks }} marks in my first semester examination"
 
   - name: printing the variables marks fo student 2
-    vars:
+    vars:      
      marks: "45"
     debug:
-      msg: "Eventhough I studied for {{ time }} a day, I scored only {{ marks }} marks in my first semester examination"
+      msg: "Eventhough I studied for {{ time }} a day, I scored only {{ marks }} marks in my first semester examination"  
+      #takes time from outer variables and marks is defined as local variables so it overrides existing outer varibale(marks) with local variable (marks)
