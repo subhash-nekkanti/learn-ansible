@@ -1,6 +1,5 @@
 - name: variables from inventory
   hosts: frontend
-  
   tasks:
     - name: printing variables from inventory
       debug:
