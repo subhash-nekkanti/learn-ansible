@@ -9,7 +9,6 @@
     debug:
       msg: "I studied for almost {{ time }} a day and I scored {{ marks }} marks in my first semester examination"
 
-  tasks:
   - name: printing the variables marks fo student 2
     vars:
      marks: "45"
