@@ -1,5 +1,5 @@
 - name: variables from inventory
-  hosts: frontend
+  hosts: frontend   #here there is no need to give any keywords to access variables as they are stores in inventory.ini and we will call while executing script anyway, so variables are also loaded simultaneously
   tasks:
     - name: printing variables from inventory
       debug:
