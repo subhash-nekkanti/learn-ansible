@@ -2,5 +2,5 @@
   hosts: local #target ansible server itself
   connection: local  #it will not expect credntials and ip as it is local...ansible connects to ansible server itself
   tasks:  #tasks==modules==collections
-  - name: ping localhost   #or ansible.builtin.ping
-    ping:
+  - name: ping localhost   
+    ping:       #or ansible.builtin.ping
