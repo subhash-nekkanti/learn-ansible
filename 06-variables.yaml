@@ -5,12 +5,12 @@
     time: "12 hours"
     marks: "95"
   tasks:
-  - name: printing the variables
+  - name: printing the variables marks of student 1
     debug:
       msg: "I studied for almost {{ time }} a day and I scored {{ marks }} marks in my first semester examination"
 
   tasks:
-  - name: printing the variables
+  - name: printing the variables marks fo student 2
     vars:
      marks: "45"
      time: "13 hours"
