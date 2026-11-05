@@ -1,0 +1,7 @@
+- name: variables from inventory
+  hosts: frontend
+  
+  tasks:
+    - name: printing variables from inventory
+      debug:
+        msg: "HI I am learning {{ course }} from {{ Trainer }} which if of {{ Duration }} duration"
