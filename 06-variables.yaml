@@ -3,7 +3,7 @@
   connection: local
   vars:
     time: "12 hours"
-    marks: 95
+    marks: "95"
   tasks:
   - name: printing the variables
     debug:
