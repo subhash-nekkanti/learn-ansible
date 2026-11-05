@@ -12,6 +12,5 @@
   - name: printing the variables marks fo student 2
     vars:
      marks: "45"
-     time: "13 hours"
     debug:
       msg: "Eventhough I studied for {{ time }} a day, I scored only {{ marks }} marks in my first semester examination"
