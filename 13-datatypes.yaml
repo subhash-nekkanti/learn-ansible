@@ -9,7 +9,7 @@
     - Linux
     - Ansible
     - Terraform
-    - Qubernetes
+    - Kubernetes
     Additional_details:  #map/dict
       tariner: sivakumar
       price: 24999
@@ -18,7 +18,7 @@
   - name: print full detailed course information
     debug:
       msg: |
-        course_name : {{ course_name }} : {{ course_name | type_debug }}   #type_debug prints the datatype
+        course : {{ course }} : {{ course | type_debug }}                             #type_debug prints Datatypes
         duration : {{ Duration_In_Months }} : {{ Duration_In_Months | type_debug }}
         are_live_sessions_available : {{ Live_Sessions }} : {{ Live_Sessions | type_debug }}
         Topics_discussed_in_course : {{ topics }} : {{ topics | type_debug }}
