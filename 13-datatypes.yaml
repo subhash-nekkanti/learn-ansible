@@ -16,12 +16,12 @@
       exact_duration_in_months: 4.5
   tasks:
   - name: print full detailed course information
-  debug:
-    msg: |
-      course_name: {{ course_name }} : {{ course_name | type_debug }}   #type_debug prints the datatype
-      duration : {{ Duration_In_Months }} : {{ Duration_In_Months | type_debug }}
-      are_live_sessions_available : {{ Live_Sessions }} : {{ Live_Sessions | type_debug }}
-      Topics_discussed_in_course : {{ topics }} : {{ topics | type_debug }}
-      additional_course_details : {{ Additional_details }} : {{ Additional_details | type_debug }}
+    debug:
+      msg: |
+        course_name: {{ course_name }} : {{ course_name | type_debug }}   #type_debug prints the datatype
+        duration : {{ Duration_In_Months }} : {{ Duration_In_Months | type_debug }}
+        are_live_sessions_available : {{ Live_Sessions }} : {{ Live_Sessions | type_debug }}
+        Topics_discussed_in_course : {{ topics }} : {{ topics | type_debug }}
+        additional_course_details : {{ Additional_details }} : {{ Additional_details | type_debug }}
 
 
