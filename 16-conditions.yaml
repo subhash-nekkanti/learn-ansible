@@ -1,6 +1,7 @@
 - name: Install Nginx Acc to OS
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: Check OS
     dnf:
