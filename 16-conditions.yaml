@@ -1,0 +1,15 @@
+- name: Install Nginx Acc to OS
+  hosts: local
+  connection: local
+  tasks:
+  - name: Check OS
+    dnf:
+      name: nginx
+      state: present
+    when: ansible_facts.os_family == "RedHat"
+
+  - name: Check OS
+    apt:
+      name: nginx
+      state: present
+    when: ansible_facts.os_family == "Debian"
