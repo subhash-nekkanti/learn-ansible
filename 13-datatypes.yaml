@@ -4,7 +4,7 @@
   vars:
     course: DevSecOps with AiOps  #string
     Duration_In_Months: 4  #int
-    Live_Sessions: true  #boolean
+    Live_Sessions: yes  #boolean
     topics:  #list
     - Linux
     - Ansible
@@ -18,7 +18,7 @@
   - name: print full detailed course information
     debug:
       msg: |
-        course : {{ course }} : {{ course | type_debug }}                             #type_debug prints Datatypes
+        course : {{ course }} : {{ course | type_debug }}                             
         duration : {{ Duration_In_Months }} : {{ Duration_In_Months | type_debug }}
         are_live_sessions_available : {{ Live_Sessions }} : {{ Live_Sessions | type_debug }}
         Topics_discussed_in_course : {{ topics }} : {{ topics | type_debug }}
@@ -26,3 +26,4 @@
         exact_duration_in_months: {{ exact_duration_in_months }} : {{ exact_duration_in_months | type_debug}}
 
 
+#type_debug prints Datatypes
