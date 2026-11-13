@@ -3,13 +3,13 @@
   connection: local
   become: yes
   tasks:
-  - name: Check OS
+  - name: Install Nginx in RedHat
     dnf:
       name: nginx
       state: present
     when: ansible_facts.os_family == "RedHat"
 
-  - name: Check OS
+  - name: Install Nginx in RedHat
     apt:
       name: nginx
       state: present
