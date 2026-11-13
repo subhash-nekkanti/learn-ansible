@@ -14,5 +14,4 @@
     package:
       name: {{ item }}
       state: present
-      msg: {{ item }} Installed
     loop: package
