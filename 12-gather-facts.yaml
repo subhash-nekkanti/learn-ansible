@@ -10,4 +10,4 @@
       msg: |
       OS_FAMILY: {{ ansible_facts['os_family'] }}
       pri_ip: {{ ansible_facts.default_ipv4.addresses }}
-      private_IP: {{ansible_facts['default_ipv4['addresses']'] }}
+      private_IP: {{ansible_facts['default_ipv4['default_ipv4['addresses']']' }}
