@@ -1,0 +1,14 @@
+- name: print os is redhat or ubuntu
+  hosts: local
+  connection: local
+  tasks:
+  - name: Check OS
+    debug:
+      msg: The OS is redhat
+    when: ansible_facts.os_family == "RedHat"
+
+  - name: Check OS
+    debug:
+      msg: the OS is ubuntu
+    when: ansible_facts.os_family == "Debian"
+  
