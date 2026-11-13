@@ -1,0 +1,18 @@
+- name: demo no filters
+  hosts: local
+  connection: local
+  vars:
+    topics: "Linux, Shell, Ansible, Terraform, Docker"
+  tasks:
+  - name: print name without defined variable
+    debug:
+      msg: Hi I am {{ person_name | default('Subhash') }}  #person_name is not defined so it throws error so we can pass a variable without defining by giving default value with default("...") command
+    
+  - name: convert string to list 
+    debug:
+     msg: "Topics are: {{ topics | split(,) | trim }}"    
+
+
+#topics is the variable defines
+#split is used to cut the string to list (, coma) specifies where to cut the string ---> linux, xhell, ansible all are string so we split the string using , and make linux shell and ansible in the form of list.
+#trim is used to remove extra spaces
