@@ -1,0 +1,16 @@
+- name: check even or odd
+  hosts: local
+  connection: local
+  vars:
+    given_number: 10
+  tasks:
+  - name: given number is even
+    debug:
+      msg: " the given number is even "    #when is used as condition similarly like if - else but there is no else if its true executes if false it just leaves
+    when: given_number % 2 == 0 #expression (In task when a condition(when) is given then it executes the condition first and then executes module/command i.e (debug:))
+  
+  - name: given number is odd
+    debug:
+      msg: "The given number is odd"
+    when: given_number % 2 == 0 #expression
+  
