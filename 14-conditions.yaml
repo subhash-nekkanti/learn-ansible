@@ -12,5 +12,5 @@
   - name: given number is odd
     debug:
       msg: "The given number is odd"
-    when: given_number % 2 == 0 #expression
+    when: given_number % 2 != 0 #expression
   
