@@ -14,5 +14,5 @@
 
 
 #topics is the variable defines
-#split is used to cut the string to list (, coma) specifies where to cut the string ---> linux, xhell, ansible all are string so we split the string using , and make linux shell and ansible in the form of list.
-#trim is used to remove extra spaces
+#split is used to cut the string to list (, coma) specifies where to cut the string ---> 
+#linux, Shell, ansible all are stored in a string so we split the string using ',' and make linux shell and ansible in the form of list.
