@@ -1,0 +1,12 @@
+- name: demo on loops
+  hosts: local
+  connection: local
+  tasks:
+  - name: print names
+    debug: 
+      msg: hi i am {{ item }}  #item is  a reserved key word for loops 
+    loop:
+    - ram
+    - subhash
+    - ramesh
+    - mahesh     #these names enter into item consicutively one after one 
