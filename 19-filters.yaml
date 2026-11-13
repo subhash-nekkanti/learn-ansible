@@ -10,7 +10,7 @@
     
   - name: convert string to list 
     debug:
-     msg: "Topics are: {{ topics | split(',') | trim }}"    
+     msg: Topics are: {{ topics | split(',') | trim }}  
 
 
 #topics is the variable defines
