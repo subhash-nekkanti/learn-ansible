@@ -8,6 +8,6 @@
   - name: gather some info from ansible_facts
     debug:
       msg: |
-      OS_FAMILY: {{ ansible_facts['os_family'] }}
-      pri_ip: {{ ansible_facts.default_ipv4.addresses }}
-      private_IP: {{ ansible_facts['default_ipv4']['addresses'] }}
+        OS_FAMILY: {{ ansible_facts['os_family'] }}
+        pri_ip: {{ ansible_facts.default_ipv4.addresses }}
+        private_IP: {{ ansible_facts['default_ipv4']['addresses'] }}
