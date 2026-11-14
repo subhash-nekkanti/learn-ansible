@@ -1,0 +1,32 @@
+- name: shell vs command
+  hosts: local
+  connection: local
+  tasks:
+  - name: test the command module
+    #command: cat /etc/passwd | grep ec2-user
+    shell: cat /etc/passwd | grep ec2-user
+    register: ec2_user_output
+
+  - name: print the output
+    debug:
+      msg: "{{ ec2_user_output }}"
+
+  - name: get the files
+    #command: ls -la > /tmp/files.txt
+    shell: ls -la > /tmp/files.txt
+    register: files_output
+
+  - name: print files info
+    debug:
+      msg: "{{ files_output }}"
+
+
+
+#shell vs command
+#both shell and command works on remote host
+#1. If we use shell we get full access to the server i.e its environment and its variables
+#2.if we use command module it does not have any access to server environment and its variables. It will just execute the command.
+#--> redirections and  pipes doesnot work in command module
+
+
+#for simple commands use command module and for complex commands with redirections and pipes we neeed server envi so use server module
