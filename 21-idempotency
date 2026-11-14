@@ -1,0 +1,8 @@
+- name: create user
+  connection: local
+  hosts: local
+  become: yes
+  tasks:
+  - name: create user
+    user:
+      name: roboshop # useradd roboshop
