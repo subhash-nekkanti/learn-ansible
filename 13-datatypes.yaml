@@ -24,7 +24,7 @@
         Topics_discussed_in_course : {{ topics }} : {{ topics | type_debug }}
         additional_course_details : {{ Additional_details }} : {{ Additional_details | type_debug }}
         exact_duration_in_months: {{ exact_duration_in_months }} : {{ exact_duration_in_months | type_debug}}
-        {{ "hello world"  | type_debug }} 
+        "hello world" {{ "hello world"  | type_debug }} 
 
 
 #type_debug prints Datatypes
